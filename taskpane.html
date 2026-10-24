@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code Slides</title>
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+<style>
+  :root { --bg:#14171c; --panel:#1b1f26; --line:#2a303a; --text:#e6e9ef; --mute:#8b93a1; --acc:#4fc3a1; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:14px; background:var(--bg); color:var(--text); font:13px/1.4 "Segoe UI", system-ui, sans-serif; }
+  h1 { font-size:15px; margin:0 0 12px; font-weight:600; }
+  label { display:block; color:var(--mute); margin:10px 0 4px; }
+  select, input[type=number], textarea { width:100%; background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:6px; padding:7px 8px; font:inherit; }
+  textarea { font-family:Consolas, "Courier New", monospace; font-size:12px; min-height:150px; resize:vertical; white-space:pre; tab-size:4; }
+  select:focus, input:focus, textarea:focus, button:focus-visible { outline:2px solid var(--acc); outline-offset:1px; }
+  .row { display:flex; gap:10px; }
+  .row > div { flex:1; }
+  .chk { display:flex; align-items:center; gap:8px; margin:8px 0 0; color:var(--text); }
+  .chk input { margin:0; accent-color:var(--acc); }
+  button { width:100%; margin-top:14px; padding:10px; background:var(--acc); color:#07251c; border:0; border-radius:6px; font:600 13px "Segoe UI", sans-serif; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  #prev { margin-top:12px; border-radius:6px; padding:10px 12px; font:12px/1.35 Consolas, monospace; overflow:auto; max-height:200px; white-space:pre; }
+  #msg { margin-top:10px; color:var(--mute); min-height:18px; }
+  #msg.err { color:#ff8a80; }
+</style>
+</head>
+<body>
+  <h1>Code Slides</h1>
+
+  <div class="row">
+    <div>
+      <label for="lang">Lenguaje</label>
+      <select id="lang"></select>
+    </div>
+    <div>
+      <label for="theme">Tema</label>
+      <select id="theme"></select>
+    </div>
+  </div>
+
+  <label for="code">Código</label>
+  <textarea id="code" spellcheck="false"></textarea>
+
+  <div class="row">
+    <div>
+      <label for="size">Tamaño (pt)</label>
+      <input id="size" type="number" min="8" max="40" value="16">
+    </div>
+    <div>
+      <label for="start">Primera línea</label>
+      <input id="start" type="number" min="0" value="1">
+    </div>
+  </div>
+
+  <label class="chk"><input id="optLn" type="checkbox" checked> Numeración de línea</label>
+  <label class="chk"><input id="optBar" type="checkbox" checked> Barra de ventana con título</label>
+  <label class="chk"><input id="optBg" type="checkbox"> Fondo completo de la diapositiva</label>
+
+  <div id="prev"></div>
+  <button id="go">Insertar en la diapositiva</button>
+  <div id="msg"></div>
+
+  <script src="taskpane.js"></script>
+</body>
+</html>
