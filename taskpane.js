@@ -2,11 +2,11 @@
 
 // ---------- Temas ----------
 const THEMES = {
-  "Oscuro (VS Code)": { slide:"#0F1115", bg:"#1E1E1E", bar:"#2D2D2D", fg:"#D4D4D4", ln:"#6E7681", kw:"#569CD6", str:"#CE9178", com:"#6A9955", num:"#B5CEA8", fn:"#DCDCAA", cmd:"#4EC9B0", flag:"#9CDCFE", op:"#C586C0", var:"#9CDCFE" },
-  "Dracula":          { slide:"#191A21", bg:"#282A36", bar:"#21222C", fg:"#F8F8F2", ln:"#6272A4", kw:"#FF79C6", str:"#F1FA8C", com:"#6272A4", num:"#BD93F9", fn:"#50FA7B", cmd:"#8BE9FD", flag:"#FFB86C", op:"#FF79C6", var:"#FFB86C" },
-  "Monokai":          { slide:"#1B1C17", bg:"#272822", bar:"#1E1F1A", fg:"#F8F8F2", ln:"#75715E", kw:"#F92672", str:"#E6DB74", com:"#75715E", num:"#AE81FF", fn:"#A6E22E", cmd:"#66D9EF", flag:"#FD971F", op:"#F92672", var:"#FD971F" },
-  "Nord":             { slide:"#242933", bg:"#2E3440", bar:"#3B4252", fg:"#D8DEE9", ln:"#616E88", kw:"#81A1C1", str:"#A3BE8C", com:"#616E88", num:"#B48EAD", fn:"#88C0D0", cmd:"#8FBCBB", flag:"#EBCB8B", op:"#81A1C1", var:"#D08770" },
-  "Claro":            { slide:"#E9ECF1", bg:"#FFFFFF", bar:"#EEF0F4", fg:"#24292F", ln:"#8C959F", kw:"#CF222E", str:"#0A3069", com:"#6E7781", num:"#0550AE", fn:"#8250DF", cmd:"#116329", flag:"#953800", op:"#CF222E", var:"#953800" }
+  "Oscuro (VS Code)": { slide:"#1E1E1E", bg:"#1E1E1E", bar:"#2D2D2D", fg:"#D4D4D4", ln:"#6E7681", kw:"#569CD6", str:"#CE9178", com:"#6A9955", num:"#B5CEA8", fn:"#DCDCAA", cmd:"#4EC9B0", flag:"#9CDCFE", op:"#C586C0", var:"#9CDCFE" },
+  "Dracula":          { slide:"#282A36", bg:"#282A36", bar:"#21222C", fg:"#F8F8F2", ln:"#6272A4", kw:"#FF79C6", str:"#F1FA8C", com:"#6272A4", num:"#BD93F9", fn:"#50FA7B", cmd:"#8BE9FD", flag:"#FFB86C", op:"#FF79C6", var:"#FFB86C" },
+  "Monokai":          { slide:"#272822", bg:"#272822", bar:"#1E1F1A", fg:"#F8F8F2", ln:"#75715E", kw:"#F92672", str:"#E6DB74", com:"#75715E", num:"#AE81FF", fn:"#A6E22E", cmd:"#66D9EF", flag:"#FD971F", op:"#F92672", var:"#FD971F" },
+  "Nord":             { slide:"#2E3440", bg:"#2E3440", bar:"#3B4252", fg:"#D8DEE9", ln:"#616E88", kw:"#81A1C1", str:"#A3BE8C", com:"#616E88", num:"#B48EAD", fn:"#88C0D0", cmd:"#8FBCBB", flag:"#EBCB8B", op:"#81A1C1", var:"#D08770" },
+  "Claro":            { slide:"#FFFFFF", bg:"#FFFFFF", bar:"#EEF0F4", fg:"#24292F", ln:"#8C959F", kw:"#CF222E", str:"#0A3069", com:"#6E7781", num:"#0550AE", fn:"#8250DF", cmd:"#116329", flag:"#953800", op:"#CF222E", var:"#953800" }
 };
 
 // ---------- Lenguajes (reglas en orden de prioridad; sin grupos de captura) ----------
